@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanu’s Love 💕</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', 'Arial', sans-serif;
+            background: linear-gradient(135deg, #f8e1e9, #ffe6f0);
+            /* Pastel pink gradient */
+            color: #5b3a49;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            text-shadow: 2px 2px #ffe6ee;
+            margin: 20px;
+        }
+
+        .particle {
+            position: fixed;
+            /* Full-screen coverage */
+            pointer-events: none;
+            /* Prevents interaction with particles */
+            width: 20px;
+            height: 20px;
+            font-size: 20px;
+            /* Emoji size */
+            line-height: 20px;
+            text-align: center;
+            animation: fall 5s linear infinite;
+            /* Falling animation */
+            z-index: 1000;
+            /* Above other elements */
+        }
+
+        @keyframes fall {
+            0% {
+                transform: translateY(-10vh) rotate(0deg);
+                /* Start above viewport */
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(100vh) rotate(360deg);
+                /* End below viewport */
+                opacity: 0;
+                /* Fade out */
+            }
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .love-note {
+            background-color: #fff0f5;
+            border: 3px solid #ffccd5;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .love-note p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        .tanu-pic {
+            width: 200px;
+            border-radius: 15px;
+            animation: spin 4s infinite linear;
+            margin: 20px 0;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(0deg);
+            }
+        }
+
+        .button {
+            background-color: #ff80ab;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1em;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .button:hover {
+            background-color: #ff4d8d;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Tanu’s Endless Love 💞</h1>
+        <img class="tanu-pic" src="c:\Users\Vaibhav\Downloads\WhatsApp Image 2025-11-11 at 17.15.15.jpeg" alt="Tanu">
+        <div class="love-note">
+            <p>
+                <br>
+                ≽ ^⎚ ˕ ⎚^ ≼ ⋆. 𐙚˚࿔ <b>MERI TANU</b> 𝜗𝜚˚⋆
+                <br>
+                𓂃˖˳·˖ ִֶָ ⋆🌷͙⋆ ִֶָ˖·˳˖𓂃 ִֶָ Meri Tanu, you are my everything. Your love wraps around me like a warm
+                blanket, making every moment
+                feel safe and cherished. The way you care for me, with such tenderness and patience, melts my heart
+                every single day. From the little things—like your sweet messages to check on me—to the big moments
+                where you hold me close, you make me feel like the luckiest person alive. You’ve made me fall for you so
+                deeply, with your playful giggles, your kind soul, and the way you always know how to make me smile.
+                You’re my safe haven, my joy, and my forever love. I’m so grateful for how you love me, Tanu, and I’ll
+                spend every day showing you just how much you mean to me.𓂃˖˳·˖ ִֶָ ⋆🌷͙⋆ ִֶָ˖·˳˖𓂃 ִֶָ
+            </p>
+            <h1>Sprinkling Flowers for Tanu 🌸</h1>
+            <script>
+                function createParticle() {
+                    const particle = document.createElement('div');
+                    particle.className = 'particle';
+                    particle.style.left = Math.random() * window.innerWidth + 'px'; /* Random x-position */
+                    particle.innerHTML = Math.random() > 0.5 ? '🌸' : '💖'; /* Flower or heart emoji */
+                    document.body.appendChild(particle);
+                    setTimeout(() => particle.remove(), 5000); /* Remove after 5s */
+                }
+                setInterval(createParticle, 300); /* Create new particle every 300ms */
+            </script>
+        </div>
+        <a href="index.html" class="button">Back to Home</a>
+    </div>
+</body>
+
+</html>
